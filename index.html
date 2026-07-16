@@ -20,6 +20,7 @@ body{background:#f2ede6;font-family:'Space Mono',monospace;}
 .acc-body{display:none;padding:16px 0 24px;border-top:1px solid #eee;}
 .acc-body.open{display:grid;grid-template-columns:200px 1fr;gap:24px;}
 .acc-img{width:200px;height:280px;object-fit:contain;background:#e8e2d8;display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:13px;color:#f2ede6;letter-spacing:1px;text-align:center;padding:8px;border:1px solid #ddd;}
+.acc-img-wide{width:200px;height:200px;object-fit:contain;background:#e8e2d8;border:1px solid #ddd;}
 .acc-desc{font-size:10px;color:#444;line-height:1.9;margin-bottom:10px;border-left:2px solid #111;padding-left:10px;}
 .acc-crew{font-size:10px;color:#555;line-height:1.9;}
 .acc-crew strong{color:#111;font-weight:700;}
@@ -148,25 +149,6 @@ body{background:#f2ede6;font-family:'Space Mono',monospace;}
     </div>
   </div>
 
-  <!-- CORDELIA CORDY -->
-  <div class="acc-item">
-    <div class="acc-header" onclick="toggle('e5')">
-      <span class="acc-date">12 avr. 2026</span>
-      <div>
-        <div class="acc-title">Cordelia Cordy</div>
-        <div class="acc-cie">Drag Show</div>
-      </div>
-      <span class="acc-tag tag-blue">Drag Show</span>
-      <span class="acc-arrow" id="a-e5">▶</span>
-    </div>
-    <div class="acc-body" id="e5">
-      <div class="acc-img" style="background:#6a0dad;">CORDELIA<br>CORDY</div>
-      <div>
-        <div class="acc-note">Entrée gratuite</div>
-      </div>
-    </div>
-  </div>
-
   <!-- SOIRÉE ÉTINCELLE -->
   <div class="acc-item">
     <div class="acc-header" onclick="toggle('e6')">
@@ -179,11 +161,12 @@ body{background:#f2ede6;font-family:'Space Mono',monospace;}
       <span class="acc-arrow" id="a-e6">▶</span>
     </div>
     <div class="acc-body" id="e6">
-      <img class="acc-img" src="https://github.com/coralie-ngj/labarak-archives/blob/main/images/photo-etincelle.jpg?raw=true" alt="Soirée Étincelle IX">
+      <img class="acc-img-wide" src="https://github.com/coralie-ngj/labarak-archives/blob/main/images/photo-etincelle.jpg?raw=true" alt="Soirée Étincelle IX">
       <div>
         <div class="acc-desc">Pour cette 9ème édition des Soirées Étincelles, la compagnie propose une soirée autour de l'audiovisuel : courts-métrages, clips, documentaires, podcasts, extraits et vidéos en tous genres. La forme est libre et ne doit pas excéder les 10 minutes.</div>
         <div class="acc-crew"><strong>Compagnie :</strong> Cie Terre de Feu</div>
         <div class="acc-note">Entrée gratuite · Buvette sur place</div>
+        <a class="acc-link" href="https://compagnieterredefeu.fr/" target="_blank">compagnieterredefeu.fr</a>
       </div>
     </div>
   </div>
@@ -203,12 +186,19 @@ body{background:#f2ede6;font-family:'Space Mono',monospace;}
       <img class="acc-img" src="https://github.com/coralie-ngj/labarak-archives/blob/main/images/affiche%20rainbow.jpg?raw=true" alt="Affiche Rainbow Screen Festival">
       <div>
         <img src="https://github.com/coralie-ngj/labarak-archives/blob/main/images/logo%20rainbow%20screen.png?raw=true" alt="Logo Rainbow Screen" style="width:40px;height:40px;object-fit:cover;border-radius:50%;margin-bottom:8px;">
-        <div class="acc-desc">Festival de cinéma queer et militant accueilli à La Barak.</div>
-        <div class="acc-note">Entrée libre</div>
+        <div class="acc-desc">Rainbow Screen est le festival de films et cultures LGBTQIA+ de Montpellier, membre de la Fédération française des festivals de films LGBTQIA+. Pour l'édition 2026 (14–22 mars), La Barak a accueilli le volet <strong>Rainbow Théâtre</strong> : deux jours de lectures publiques en partenariat avec le festival.</div>
+        <div class="acc-crew">
+          <strong>Sam. 14 mars, 14h30 :</strong> "On s'aime, on s'épuise, on continue" — lecture de Teofil Moineau (coup de cœur du comité de lecture)<br>
+          <strong>Sam. 14 mars, 16h30 :</strong> Lectures publiques — "Léviathan", "Il était une fin", "L'étang qui sait tout"<br>
+          <strong>Dim. 15 mars, 15h :</strong> Lectures publiques — "Les Goujons sont sapphiques ma fille", "Torrent", "Un lamantin rose bonbon"<br>
+          <strong>Dim. 15 mars, 19h30 :</strong> "L'enfant sur Mars" — lecture de Baptiste Moreau (focus montpelliérain)
+        </div>
+        <div class="acc-note">Entrée libre — toutes les séances à La Barak</div>
         <div class="acc-gallery">
           <img src="https://github.com/coralie-ngj/labarak-archives/blob/main/images/WhatsApp%20Image%202026-03-25%20at%2010.51.58.jpeg?raw=true" alt="Rainbow Screen Festival — photo">
         </div>
-        <a class="acc-link" href="https://www.rainbowscreenfestival.com/" target="_blank">rainbowscreenfestival.com</a>
+        <a class="acc-link" href="https://www.rainbowscreenfestival.fr/" target="_blank">rainbowscreenfestival.fr</a><br>
+        <a class="acc-link" href="https://www.instagram.com/rainbow_screen_festival/" target="_blank">@rainbow_screen_festival</a>
       </div>
     </div>
   </div>
