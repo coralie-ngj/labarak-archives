@@ -1,0 +1,209 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#f2ede6;font-family:'Space Mono',monospace;}
+.acc-wrap{max-width:800px;margin:0 auto;padding:0 16px;}
+.acc-season{font-family:'Anton',sans-serif;font-size:36px;color:#111;margin-bottom:4px;}
+.acc-sep{border:none;border-top:2px solid #111;margin-bottom:0;}
+.acc-item{border-bottom:1px solid #ccc;}
+.acc-header{display:grid;grid-template-columns:100px 1fr 130px 24px;gap:12px;align-items:center;padding:14px 0;cursor:pointer;transition:background 0.1s;}
+.acc-header:hover{background:#ede8e0;padding-left:8px;}
+.acc-date{font-size:9px;color:#888;letter-spacing:1px;text-transform:uppercase;line-height:1.4;}
+.acc-title{font-family:'Anton',sans-serif;font-size:18px;color:#111;line-height:1;}
+.acc-cie{font-size:9px;color:#666;margin-top:3px;}
+.acc-tag{display:inline-block;font-size:8px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;color:#f2ede6;}
+.tag-red{background:#c0392b;}
+.tag-black{background:#111;}
+.tag-blue{background:#1a3cff;}
+.acc-arrow{font-size:14px;color:#888;text-align:right;transition:transform 0.2s;}
+.acc-arrow.open{transform:rotate(180deg);}
+.acc-body{display:none;padding:16px 0 24px;border-top:1px solid #eee;}
+.acc-body.open{display:grid;grid-template-columns:160px 1fr;gap:24px;}
+.acc-img{width:160px;height:110px;object-fit:cover;background:#333;display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:13px;color:#f2ede6;letter-spacing:1px;text-align:center;padding:8px;}
+.acc-desc{font-size:10px;color:#444;line-height:1.9;margin-bottom:10px;border-left:2px solid #111;padding-left:10px;}
+.acc-crew{font-size:10px;color:#555;line-height:1.9;}
+.acc-crew strong{color:#111;font-weight:700;}
+.acc-note{font-size:10px;color:#888;margin-top:8px;font-style:italic;}
+</style>
+
+<div class="acc-wrap">
+  <div class="acc-season" style="margin-top:8px;">SAISON 2025–2026</div>
+  <hr class="acc-sep">
+
+  <!-- MÊME SI ÇA CHANGE DEMAIN -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e1')">
+      <span class="acc-date">27 juin 2026<br>19h</span>
+      <div>
+        <div class="acc-title">Même si ça change demain</div>
+        <div class="acc-cie">Salomé Thérond</div>
+      </div>
+      <span class="acc-tag tag-red">Sortie de chantier</span>
+      <span class="acc-arrow" id="a-e1">▼</span>
+    </div>
+    <div class="acc-body open" id="e1">
+      <div class="acc-img" style="background:#2d4a3e;">MÊME SI ÇA<br>CHANGE<br>DEMAIN</div>
+      <div>
+        <div class="acc-desc">Ce spectacle retrace les différents passages de vie qui s'entrechoquent autour d'un repas de famille. L'enfance, l'adolescence, la vieillesse, le passage à la vie adulte, la maternité se croisent devant une sorte de guide, jamais surpris de ce qu'il se passe.</div>
+        <div class="acc-crew">
+          <strong>Mise en scène et écriture :</strong> Salomé Thérond<br>
+          <strong>Comédien·nes :</strong> Florence Gaultier, Ambre Provost, Enzo Barrau, Pauline Martinez, Zia Lebot, Clothilde Lucas<br>
+          <strong>Captation vidéo :</strong> Louise Bonnery<br>
+          <strong>Durée :</strong> 1 heure
+        </div>
+        <div class="acc-note">Entrée au chapeau · Buvette sur place (pas de CB)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LA DANSE DES CAVALIERS -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e2')">
+      <span class="acc-date">14 & 20 juin 2026<br>20h</span>
+      <div>
+        <div class="acc-title">La Danse des Cavaliers</div>
+        <div class="acc-cie">Gabriel Rodriguez / Augustin Allard</div>
+      </div>
+      <span class="acc-tag tag-red">Sortie de chantier</span>
+      <span class="acc-arrow" id="a-e2">▶</span>
+    </div>
+    <div class="acc-body" id="e2">
+      <div class="acc-img" style="background:#c0392b;">LA DANSE<br>DES<br>CAVALIERS</div>
+      <div>
+        <div class="acc-desc">L'histoire de Max et Léon, deux frères unis depuis l'enfance par leur passion commune : les échecs. À travers quatre âges de leur vie, la pièce explore comment le temps transforme les rêves, les choix et leur lien.</div>
+        <div class="acc-crew">
+          <strong>Écriture :</strong> Gabriel Rodriguez<br>
+          <strong>Mise en scène :</strong> Augustin Allard<br>
+          <strong>Comédien·nes :</strong> Jeanne Arsac, Hugo Métais, Gabriel Rodriguez<br>
+          <strong>Régie :</strong> Albin Thevenin · <strong>Durée :</strong> 1h15
+        </div>
+        <div class="acc-note">Entrée au chapeau · Buvette sur place (pas de CB)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOIRÉE IMPRO -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e3')">
+      <span class="acc-date">2 mai 2026<br>20h</span>
+      <div>
+        <div class="acc-title">Soirée Impro</div>
+        <div class="acc-cie">Le TAUST</div>
+      </div>
+      <span class="acc-tag tag-black">Soirée</span>
+      <span class="acc-arrow" id="a-e3">▶</span>
+    </div>
+    <div class="acc-body" id="e3">
+      <div class="acc-img" style="background:#111;">SOIRÉE<br>IMPRO</div>
+      <div>
+        <div class="acc-desc">Le Taust revient à La Barak pour un nouveau spectacle d'improvisation !</div>
+        <div class="acc-crew"><strong>Compagnie :</strong> Le TAUST</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOLONE -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e4')">
+      <span class="acc-date">27 avr. 2026<br>14h30 & 18h</span>
+      <div>
+        <div class="acc-title">Solone</div>
+        <div class="acc-cie">Carla Prieto</div>
+      </div>
+      <span class="acc-tag tag-red">Sortie de chantier</span>
+      <span class="acc-arrow" id="a-e4">▶</span>
+    </div>
+    <div class="acc-body" id="e4">
+      <div class="acc-img" style="background:#1a3cff;">SOLONE</div>
+      <div>
+        <div class="acc-desc">Dans un monde qui ressemble un peu au nôtre, Solone cherche à recréer la beauté d'un souvenir perdu. Perché au sommet de son échelle, Brice, une IA pragmatique qui est le seul à comprendre son langage, l'observe et tente de le distraire.</div>
+        <div class="acc-crew">
+          <strong>De et par :</strong> Carla Prieto<br>
+          <strong>Mise en scène :</strong> Alice Marty<br>
+          <strong>Collaboration musicale :</strong> Emma Naegel<br>
+          Suivi des concerts : John Fushia (19h) · Belly K7 (20h)
+        </div>
+        <div class="acc-note">Entrée gratuite</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORDELIA CORDY -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e5')">
+      <span class="acc-date">12 avr. 2026</span>
+      <div>
+        <div class="acc-title">Cordelia Cordy</div>
+        <div class="acc-cie">Drag Show</div>
+      </div>
+      <span class="acc-tag tag-blue">Drag Show</span>
+      <span class="acc-arrow" id="a-e5">▶</span>
+    </div>
+    <div class="acc-body" id="e5">
+      <div class="acc-img" style="background:#6a0dad;">CORDELIA<br>CORDY</div>
+      <div>
+        <div class="acc-note">Entrée gratuite</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOIRÉE ÉTINCELLE -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e6')">
+      <span class="acc-date">10 avr. 2026<br>19h</span>
+      <div>
+        <div class="acc-title">Soirée Étincelle</div>
+        <div class="acc-cie">Cie Terre de Feu</div>
+      </div>
+      <span class="acc-tag tag-black">Soirée</span>
+      <span class="acc-arrow" id="a-e6">▶</span>
+    </div>
+    <div class="acc-body" id="e6">
+      <div class="acc-img" style="background:#111;">SOIRÉE<br>ÉTINCELLE<br>IX</div>
+      <div>
+        <div class="acc-desc">Pour cette 9ème édition des Soirées Étincelles, la compagnie propose une soirée autour de l'audiovisuel : courts-métrages, clips, documentaires, podcasts, extraits et vidéos en tous genres. La forme est libre et ne doit pas excéder les 10 minutes.</div>
+        <div class="acc-crew"><strong>Compagnie :</strong> Cie Terre de Feu</div>
+        <div class="acc-note">Entrée gratuite · Buvette sur place</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RAINBOW SCREEN -->
+  <div class="acc-item">
+    <div class="acc-header" onclick="toggle('e7')">
+      <span class="acc-date">2025–2026</span>
+      <div>
+        <div class="acc-title">Rainbow Screen Festival</div>
+        <div class="acc-cie">Festival de cinéma queer et militant</div>
+      </div>
+      <span class="acc-tag tag-black">Festival</span>
+      <span class="acc-arrow" id="a-e7">▶</span>
+    </div>
+    <div class="acc-body" id="e7">
+      <div class="acc-img" style="background:#4a0080;">RAINBOW<br>SCREEN</div>
+      <div>
+        <div class="acc-desc">Festival de cinéma queer et militant accueilli à La Barak.</div>
+        <div class="acc-note">Entrée libre</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(id){
+  var body=document.getElementById(id);
+  var arrow=document.getElementById('a-'+id);
+  if(body.classList.contains('open')){
+    body.classList.remove('open');
+    body.style.display='none';
+    arrow.textContent='▶';
+    arrow.classList.remove('open');
+  } else {
+    body.classList.add('open');
+    body.style.display='grid';
+    arrow.textContent='▼';
+    arrow.classList.add('open');
+  }
+}
+</script>
